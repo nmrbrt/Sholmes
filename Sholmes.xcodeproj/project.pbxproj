@@ -15,6 +15,10 @@
 		A0A6A14920F53A220013AB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A6A14720F53A220013AB45 /* LaunchScreen.storyboard */; };
 		A0A6A15420F53A220013AB45 /* SholmesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6A15320F53A220013AB45 /* SholmesTests.swift */; };
 		A0A6A15F20F53A220013AB45 /* SholmesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6A15E20F53A220013AB45 /* SholmesUITests.swift */; };
+		A0E6198120F54C34005C0135 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6197520F54C33005C0135 /* VisualRecognitionV3.framework */; };
+		A0E6198E20F5567D005C0135 /* something.png in Resources */ = {isa = PBXBuildFile; fileRef = A0E6198D20F5567D005C0135 /* something.png */; };
+		A0E6199020F55875005C0135 /* pots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0E6198F20F55875005C0135 /* pots.jpg */; };
+		A0E6199320F55F27005C0135 /* sheli.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E6199220F55F27005C0135 /* sheli.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,21 @@
 		A0A6A15A20F53A220013AB45 /* SholmesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SholmesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A6A15E20F53A220013AB45 /* SholmesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholmesUITests.swift; sourceTree = "<group>"; };
 		A0A6A16020F53A220013AB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E6197320F54C33005C0135 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
+		A0E6197420F54C33005C0135 /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToneAnalyzerV3.framework; path = Carthage/Build/iOS/ToneAnalyzerV3.framework; sourceTree = "<group>"; };
+		A0E6197520F54C33005C0135 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = "<group>"; };
+		A0E6197620F54C33005C0135 /* NaturalLanguageClassifierV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageClassifierV1.framework; path = Carthage/Build/iOS/NaturalLanguageClassifierV1.framework; sourceTree = "<group>"; };
+		A0E6197720F54C33005C0135 /* DiscoveryV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscoveryV1.framework; path = Carthage/Build/iOS/DiscoveryV1.framework; sourceTree = "<group>"; };
+		A0E6197820F54C33005C0135 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		A0E6197920F54C33005C0135 /* AssistantV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssistantV1.framework; path = Carthage/Build/iOS/AssistantV1.framework; sourceTree = "<group>"; };
+		A0E6197A20F54C33005C0135 /* PersonalityInsightsV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersonalityInsightsV3.framework; path = Carthage/Build/iOS/PersonalityInsightsV3.framework; sourceTree = "<group>"; };
+		A0E6197B20F54C33005C0135 /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1.framework; path = Carthage/Build/iOS/ConversationV1.framework; sourceTree = "<group>"; };
+		A0E6197C20F54C33005C0135 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		A0E6197D20F54C33005C0135 /* LanguageTranslatorV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV3.framework; path = Carthage/Build/iOS/LanguageTranslatorV3.framework; sourceTree = "<group>"; };
+		A0E6197E20F54C34005C0135 /* NaturalLanguageUnderstandingV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageUnderstandingV1.framework; path = Carthage/Build/iOS/NaturalLanguageUnderstandingV1.framework; sourceTree = "<group>"; };
+		A0E6198D20F5567D005C0135 /* something.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = something.png; sourceTree = "<group>"; };
+		A0E6198F20F55875005C0135 /* pots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pots.jpg; sourceTree = "<group>"; };
+		A0E6199220F55F27005C0135 /* sheli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sheli.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E6198120F54C34005C0135 /* VisualRecognitionV3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +99,12 @@
 		A0A6A12F20F53A200013AB45 = {
 			isa = PBXGroup;
 			children = (
+				A0E6199120F55F1C005C0135 /* sheli */,
 				A0A6A13A20F53A200013AB45 /* Sholmes */,
 				A0A6A15220F53A220013AB45 /* SholmesTests */,
 				A0A6A15D20F53A220013AB45 /* SholmesUITests */,
 				A0A6A13920F53A200013AB45 /* Products */,
+				A0E6197220F54C33005C0135 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +123,9 @@
 			children = (
 				A0A6A13B20F53A200013AB45 /* AppDelegate.swift */,
 				A0A6A13D20F53A200013AB45 /* ViewController.swift */,
+				A0E6198F20F55875005C0135 /* pots.jpg */,
 				A0A6A13F20F53A200013AB45 /* Main.storyboard */,
+				A0E6198D20F5567D005C0135 /* something.png */,
 				A0A6A14520F53A220013AB45 /* Assets.xcassets */,
 				A0A6A14720F53A220013AB45 /* LaunchScreen.storyboard */,
 				A0A6A14A20F53A220013AB45 /* Info.plist */,
@@ -128,6 +152,33 @@
 			path = SholmesUITests;
 			sourceTree = "<group>";
 		};
+		A0E6197220F54C33005C0135 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0E6197920F54C33005C0135 /* AssistantV1.framework */,
+				A0E6197B20F54C33005C0135 /* ConversationV1.framework */,
+				A0E6197720F54C33005C0135 /* DiscoveryV1.framework */,
+				A0E6197D20F54C33005C0135 /* LanguageTranslatorV3.framework */,
+				A0E6197620F54C33005C0135 /* NaturalLanguageClassifierV1.framework */,
+				A0E6197E20F54C34005C0135 /* NaturalLanguageUnderstandingV1.framework */,
+				A0E6197A20F54C33005C0135 /* PersonalityInsightsV3.framework */,
+				A0E6197C20F54C33005C0135 /* SpeechToTextV1.framework */,
+				A0E6197820F54C33005C0135 /* Starscream.framework */,
+				A0E6197320F54C33005C0135 /* TextToSpeechV1.framework */,
+				A0E6197420F54C33005C0135 /* ToneAnalyzerV3.framework */,
+				A0E6197520F54C33005C0135 /* VisualRecognitionV3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0E6199120F55F1C005C0135 /* sheli */ = {
+			isa = PBXGroup;
+			children = (
+				A0E6199220F55F27005C0135 /* sheli.swift */,
+			);
+			path = sheli;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +189,7 @@
 				A0A6A13420F53A200013AB45 /* Sources */,
 				A0A6A13520F53A200013AB45 /* Frameworks */,
 				A0A6A13620F53A200013AB45 /* Resources */,
+				A0E6198C20F55420005C0135 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -233,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0A6A14920F53A220013AB45 /* LaunchScreen.storyboard in Resources */,
+				A0E6199020F55875005C0135 /* pots.jpg in Resources */,
 				A0A6A14620F53A220013AB45 /* Assets.xcassets in Resources */,
+				A0E6198E20F5567D005C0135 /* something.png in Resources */,
 				A0A6A14120F53A200013AB45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +308,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A0E6198C20F55420005C0135 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/VisualRecognitionV3.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0A6A13420F53A200013AB45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -262,6 +333,7 @@
 				A0A6A13E20F53A200013AB45 /* ViewController.swift in Sources */,
 				A0A6A13C20F53A200013AB45 /* AppDelegate.swift in Sources */,
 				A0A6A14420F53A200013AB45 /* Sholmes.xcdatamodeld in Sources */,
+				A0E6199320F55F27005C0135 /* sheli.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +508,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7E5TZ7SDX4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sholmes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +530,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7E5TZ7SDX4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sholmes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
