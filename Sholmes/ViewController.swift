@@ -11,25 +11,54 @@ import VisualRecognitionV3
 
 
 class ViewController: UIViewController {
-
+    
+    var classResults = [ClassResult]()
+    
+    @IBOutlet weak var resultsTableView: UITableView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageContainerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let visualRecognition = VisualRecognition(version: "2018-07-01",apiKey: sheli)
         
-        visualRecognition.classify(image: #imageLiteral(resourceName: "something.png")) { (images) in
+        self.resultsTableView.delegate = self
+        self.resultsTableView.dataSource = self
+        let nib = UINib(nibName: "ClassResultTableViewCell", bundle: nil)
+        self.resultsTableView.register(nib, forCellReuseIdentifier: "ClassResultTableViewCell")
+        
+        visualRecognition.classify(image: #imageLiteral(resourceName: "somethingElse.png")) { (images) in
             
             print(images)
             
             guard let classifiers = images.images.first?.classifiers else {return}
             
+            self.classResults.removeAll()
+            
             for a in classifiers{
                 
                 for c in a.classes{
                     
+                    self.classResults.append(c)
                     print(c.className, c.score ?? 0)
                 }
             }
+            
+            self.classResults.sort(by: { (a, b) -> Bool in
+                
+                if a.score != nil && b.score != nil{
+                    
+                    return a.score! > b.score!
+                }else{
+                    return false
+                }
+            })
+            
+            DispatchQueue.main.async {
+                self.resultsTableView.reloadData()
+            }
+            
         }
     }
 
@@ -39,5 +68,28 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.classResults.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: "ClassResultTableViewCell", for: indexPath) as! ClassResultTableViewCell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        (cell as! ClassResultTableViewCell).bind(with: self.classResults[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
+    
+    
 }
 
