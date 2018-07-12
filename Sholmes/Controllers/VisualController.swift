@@ -23,62 +23,62 @@ class VisualController{
     
     var visualRecognition: VisualRecognition!
     
+    var classifiers: [ClassifierResult]?
+    var classResults: [ClassResult] = [ClassResult]()
+    
     
     func classifySingleImage(image: UIImage, completion: @escaping (ClassResults) -> Void){
         
-        var classResults = [ClassResult]()
+//        var classResults = [ClassResult]()
         
-//        visualRecognition.classify(image: #imageLiteral(resourceName: "somethingElse.png")) { (images) in
-//            
-//            print(images)
-//        
-//            
-//            guard let classifiers = images.images.first?.classifiers else {return}
-//            
-//            for a in classifiers{
-//                
+        visualRecognition.classify(image: image, failure: ({error in
+            
+            print(error.localizedDescription)
+            completion(self.classResults)
+            
+        })) { (images) in
+            
+            self.classifiers = images.images.first?.classifiers
+            
+            self.extractClassifiers()
+            
+//            for a in self.classifiers!{
+//
 //                for c in a.classes{
-//                    
+//
 //                    classResults.append(c)
 //                    print(c.className, c.score ?? 0)
 //                }
 //            }
-//            
-//            self.sort(&classResults)
-//            
-//            completion(classResults)
-//        }
-        
-        visualRecognition.classify(image: image,failure: ({error in
             
-            print(error.localizedDescription)
-            completion(classResults)
+            self.sortClassResults()
             
-        })) { (images) in
-            
-            print(images)
-            
-            guard let classifiers = images.images.first?.classifiers else {return}
-            
-            for a in classifiers{
-                
-                for c in a.classes{
-                    
-                    classResults.append(c)
-                    print(c.className, c.score ?? 0)
-                }
-            }
-            
-            self.sort(&classResults)
-            
-            completion(classResults)
+            completion(self.classResults)
         }
     }
     
     
-    private func sort(_ classResults: inout [ClassResult]){
+    func extractClassifiers(){
         
-        classResults.sort(by: { (a, b) -> Bool in
+        guard self.classifiers != nil else {return}
+        
+        self.classResults.removeAll()
+        
+        for a in self.classifiers!{
+            
+            for c in a.classes{
+                
+                self.classResults.append(c)
+                
+                print(c.className, c.score ?? 0)
+            }
+        }
+    }
+    
+    
+    private func sortClassResults(){
+        
+        self.classResults.sort(by: { (a, b) -> Bool in
             
             if a.score != nil && b.score != nil{
                 
@@ -88,5 +88,25 @@ class VisualController{
             }
         })
     }
+    
+    
+    
+    
+    
+    
+    
+    
+//    private func sort(_ classResults: inout [ClassResult]){
+//
+//        classResults.sort(by: { (a, b) -> Bool in
+//
+//            if a.score != nil && b.score != nil{
+//
+//                return a.score! > b.score!
+//            }else{
+//                return false
+//            }
+//        })
+//    }
 }
 
