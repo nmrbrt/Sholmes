@@ -28,38 +28,46 @@ class ViewController: UIViewController {
         let nib = UINib(nibName: "ClassResultTableViewCell", bundle: nil)
         self.resultsTableView.register(nib, forCellReuseIdentifier: "ClassResultTableViewCell")
         
-        visualRecognition.classify(image: #imageLiteral(resourceName: "somethingElse.png")) { (images) in
-            
-            print(images)
-            
-            guard let classifiers = images.images.first?.classifiers else {return}
-            
+        AppController.shared.visualController.classifySingleImage(image: #imageLiteral(resourceName: "somethingElse.png")) { (classResults) in
             self.classResults.removeAll()
-            
-            for a in classifiers{
-                
-                for c in a.classes{
-                    
-                    self.classResults.append(c)
-                    print(c.className, c.score ?? 0)
-                }
-            }
-            
-            self.classResults.sort(by: { (a, b) -> Bool in
-                
-                if a.score != nil && b.score != nil{
-                    
-                    return a.score! > b.score!
-                }else{
-                    return false
-                }
-            })
-            
+            self.classResults = classResults
             DispatchQueue.main.async {
                 self.resultsTableView.reloadData()
             }
-            
         }
+        
+//        visualRecognition.classify(image: #imageLiteral(resourceName: "somethingElse.png")) { (images) in
+//            
+//            print(images)
+//            
+//            guard let classifiers = images.images.first?.classifiers else {return}
+//            
+//            self.classResults.removeAll()
+//            
+//            for a in classifiers{
+//                
+//                for c in a.classes{
+//                    
+//                    self.classResults.append(c)
+//                    print(c.className, c.score ?? 0)
+//                }
+//            }
+//            
+//            self.classResults.sort(by: { (a, b) -> Bool in
+//                
+//                if a.score != nil && b.score != nil{
+//                    
+//                    return a.score! > b.score!
+//                }else{
+//                    return false
+//                }
+//            })
+//            
+//            DispatchQueue.main.async {
+//                self.resultsTableView.reloadData()
+//            }
+//            
+//        }
     }
 
     override func didReceiveMemoryWarning() {
