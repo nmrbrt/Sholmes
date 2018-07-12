@@ -10,16 +10,9 @@ import Foundation
 
 class AppController{
     
-    init() {
-        
+    private init() {
         
     }
-    
-    func initialise(){
-        
-        self.visualController = VisualController.shared
-    }
-    
     
     static let shared = AppController()
     

@@ -24,14 +24,14 @@ class VisualController{
     
     
     
-    init() {
+    private init() {
         
         visualRecognition = VisualRecognition(version: "2018-07-01",apiKey: sheli)
     }
     
     
     //Make sure this completes before reuse
-    func classifySingleImage(image: UIImage, completion: @escaping (ClassResults) -> Void){
+    func classify(image: UIImage, completion: @escaping (ClassResults) -> Void){
         
         visualRecognition.classify(image: image, failure: ({error in
             
