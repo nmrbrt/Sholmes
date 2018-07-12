@@ -13,23 +13,25 @@ typealias ClassResults = [ClassResult]
 
 class VisualController{
     
-    init() {
-        
-        visualRecognition = VisualRecognition(version: "2018-07-01",apiKey: sheli)
-    }
-    
     
     static let shared = VisualController()
     
     var visualRecognition: VisualRecognition!
     
     var classifiers: [ClassifierResult]?
+    
     var classResults: [ClassResult] = [ClassResult]()
     
     
-    func classifySingleImage(image: UIImage, completion: @escaping (ClassResults) -> Void){
+    
+    init() {
         
-//        var classResults = [ClassResult]()
+        visualRecognition = VisualRecognition(version: "2018-07-01",apiKey: sheli)
+    }
+    
+    
+    //Make sure this completes before reuse
+    func classifySingleImage(image: UIImage, completion: @escaping (ClassResults) -> Void){
         
         visualRecognition.classify(image: image, failure: ({error in
             
@@ -42,15 +44,6 @@ class VisualController{
             
             self.extractClassifiers()
             
-//            for a in self.classifiers!{
-//
-//                for c in a.classes{
-//
-//                    classResults.append(c)
-//                    print(c.className, c.score ?? 0)
-//                }
-//            }
-            
             self.sortClassResults()
             
             completion(self.classResults)
@@ -58,55 +51,35 @@ class VisualController{
     }
     
     
+    
+    // Limited to the first set of classifiert - for now we classify a single image
     func extractClassifiers(){
         
         guard self.classifiers != nil else {return}
         
-        self.classResults.removeAll()
+        guard let firstClassifierResult = self.classifiers?.first else {return}
         
-        for a in self.classifiers!{
-            
-            for c in a.classes{
-                
-                self.classResults.append(c)
-                
-                print(c.className, c.score ?? 0)
-            }
-        }
+        self.classResults = firstClassifierResult.classes
     }
+    
     
     
     private func sortClassResults(){
         
-        self.classResults.sort(by: { (a, b) -> Bool in
-            
-            if a.score != nil && b.score != nil{
-                
-                return a.score! > b.score!
-            }else{
-                return false
-            }
-        })
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-//    private func sort(_ classResults: inout [ClassResult]){
-//
-//        classResults.sort(by: { (a, b) -> Bool in
+        self.classResults.sort(by: {$0.score! > $1.score!})
+        
+        //If you want to make it more exception-safe
+//        self.classResults.sort(by: { (a, b) -> Bool in
 //
 //            if a.score != nil && b.score != nil{
 //
 //                return a.score! > b.score!
+//
 //            }else{
+//
 //                return false
 //            }
 //        })
-//    }
+    }
 }
 
