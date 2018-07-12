@@ -67,19 +67,6 @@ class VisualController{
     private func sortClassResults(){
         
         self.classResults.sort(by: {$0.score! > $1.score!})
-        
-        //If you want to make it more exception-safe
-//        self.classResults.sort(by: { (a, b) -> Bool in
-//
-//            if a.score != nil && b.score != nil{
-//
-//                return a.score! > b.score!
-//
-//            }else{
-//
-//                return false
-//            }
-//        })
     }
 }
 
