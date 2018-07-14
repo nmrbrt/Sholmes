@@ -36,12 +36,11 @@ class TextualController{
     func analyzeTone(){
         
         let text = "Please please lets do something together. I really want to do something really really cool yo!"
-        print("analyzeTone", text)
+
         let toneContent = ToneContent.text(text)
         
         toneAnalyzer.tone(toneContent: toneContent) { (toneAnalysis) in
         
-            print("toneAnalyzer.tone","successfull")
             self.currentDocumentTone = toneAnalysis.documentTone
             self.currentSentencesTone = toneAnalysis.sentencesTone
             
