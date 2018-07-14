@@ -17,4 +17,6 @@ class AppController{
     static let shared = AppController()
     
     var visualController = VisualController.shared
+    
+    var textualController = TextualController.shared
 }

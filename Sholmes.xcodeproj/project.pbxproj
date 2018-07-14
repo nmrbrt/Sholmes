@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03DF12220F88E4D0074ED7A /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6197420F54C33005C0135 /* ToneAnalyzerV3.framework */; };
+		A03DF12620F88EC60074ED7A /* AcousticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03DF12520F88EC60074ED7A /* AcousticsController.swift */; };
+		A03DF12920F8905C0074ED7A /* TextualController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03DF12820F8905C0074ED7A /* TextualController.swift */; };
 		A0A6A13C20F53A200013AB45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6A13B20F53A200013AB45 /* AppDelegate.swift */; };
 		A0A6A13E20F53A200013AB45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6A13D20F53A200013AB45 /* ViewController.swift */; };
 		A0A6A14120F53A200013AB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A6A13F20F53A200013AB45 /* Main.storyboard */; };
@@ -15,6 +18,7 @@
 		A0A6A14920F53A220013AB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A6A14720F53A220013AB45 /* LaunchScreen.storyboard */; };
 		A0A6A15420F53A220013AB45 /* SholmesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6A15320F53A220013AB45 /* SholmesTests.swift */; };
 		A0A6A15F20F53A220013AB45 /* SholmesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6A15E20F53A220013AB45 /* SholmesUITests.swift */; };
+		A0BDC5FC20FA029400D1710B /* AcousticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDC5FB20FA029400D1710B /* AcousticsViewController.swift */; };
 		A0E6198120F54C34005C0135 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6197520F54C33005C0135 /* VisualRecognitionV3.framework */; };
 		A0E6198E20F5567D005C0135 /* something.png in Resources */ = {isa = PBXBuildFile; fileRef = A0E6198D20F5567D005C0135 /* something.png */; };
 		A0E6199020F55875005C0135 /* pots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0E6198F20F55875005C0135 /* pots.jpg */; };
@@ -44,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A03DF12520F88EC60074ED7A /* AcousticsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcousticsController.swift; sourceTree = "<group>"; };
+		A03DF12820F8905C0074ED7A /* TextualController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextualController.swift; sourceTree = "<group>"; };
 		A0A6A13820F53A200013AB45 /* Sholmes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sholmes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A6A13B20F53A200013AB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0A6A13D20F53A200013AB45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,7 @@
 		A0A6A15A20F53A220013AB45 /* SholmesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SholmesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A6A15E20F53A220013AB45 /* SholmesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholmesUITests.swift; sourceTree = "<group>"; };
 		A0A6A16020F53A220013AB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0BDC5FB20FA029400D1710B /* AcousticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcousticsViewController.swift; sourceTree = "<group>"; };
 		A0E6197320F54C33005C0135 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
 		A0E6197420F54C33005C0135 /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToneAnalyzerV3.framework; path = Carthage/Build/iOS/ToneAnalyzerV3.framework; sourceTree = "<group>"; };
 		A0E6197520F54C33005C0135 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E6198120F54C34005C0135 /* VisualRecognitionV3.framework in Frameworks */,
+				A03DF12220F88E4D0074ED7A /* ToneAnalyzerV3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +114,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A03DF12320F88E9F0074ED7A /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				A0E6199C20F73CD6005C0135 /* VisualController.swift */,
+			);
+			path = Visual;
+			sourceTree = "<group>";
+		};
+		A03DF12420F88EA70074ED7A /* Acoustic */ = {
+			isa = PBXGroup;
+			children = (
+				A03DF12520F88EC60074ED7A /* AcousticsController.swift */,
+			);
+			path = Acoustic;
+			sourceTree = "<group>";
+		};
+		A03DF12720F8903B0074ED7A /* Textual */ = {
+			isa = PBXGroup;
+			children = (
+				A03DF12820F8905C0074ED7A /* TextualController.swift */,
+			);
+			path = Textual;
+			sourceTree = "<group>";
+		};
 		A0A6A12F20F53A200013AB45 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +197,14 @@
 			path = SholmesUITests;
 			sourceTree = "<group>";
 		};
+		A0BDC5FA20FA026700D1710B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0BDC5FB20FA029400D1710B /* AcousticsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		A0E6197220F54C33005C0135 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,8 +244,11 @@
 		A0E6199B20F73CB4005C0135 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A0E6199C20F73CD6005C0135 /* VisualController.swift */,
 				A0E6199E20F73D5A005C0135 /* AppController.swift */,
+				A0BDC5FA20FA026700D1710B /* ViewControllers */,
+				A03DF12720F8903B0074ED7A /* Textual */,
+				A03DF12420F88EA70074ED7A /* Acoustic */,
+				A03DF12320F88E9F0074ED7A /* Visual */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -349,6 +392,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/VisualRecognitionV3.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ToneAnalyzerV3.framework",
 			);
 			outputPaths = (
 			);
@@ -364,11 +408,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0A6A13E20F53A200013AB45 /* ViewController.swift in Sources */,
+				A0BDC5FC20FA029400D1710B /* AcousticsViewController.swift in Sources */,
 				A0A6A13C20F53A200013AB45 /* AppDelegate.swift in Sources */,
 				A0A6A14420F53A200013AB45 /* Sholmes.xcdatamodeld in Sources */,
 				A0E6199D20F73CD6005C0135 /* VisualController.swift in Sources */,
 				A0E6199720F6782D005C0135 /* ClassResultTableViewCell.swift in Sources */,
 				A0E6199320F55F27005C0135 /* sheli.swift in Sources */,
+				A03DF12920F8905C0074ED7A /* TextualController.swift in Sources */,
+				A03DF12620F88EC60074ED7A /* AcousticsController.swift in Sources */,
 				A0E6199F20F73D5B005C0135 /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

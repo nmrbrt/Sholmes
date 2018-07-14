@@ -73,7 +73,7 @@
         <!--Acoustic-->
         <scene sceneID="gyy-j6-02k">
             <objects>
-                <viewController id="wed-Ql-gkY" sceneMemberID="viewController">
+                <viewController id="wed-Ql-gkY" customClass="AcousticsViewController" customModule="Sholmes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ppr-aZ-ATD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,6 +142,10 @@
                         <viewLayoutGuide key="safeArea" id="bLR-RW-pUy"/>
                     </view>
                     <navigationItem key="navigationItem" title="Acoustic" id="L6i-2c-OH3"/>
+                    <connections>
+                        <outlet property="startButton" destination="efF-6g-u6x" id="2qU-tx-Zn6"/>
+                        <outlet property="stopButton" destination="b4g-87-7KF" id="41w-Ik-atI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yiE-3b-h6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,6 +173,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XHA-mE-e4i" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pSO-ZB-R0x">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
