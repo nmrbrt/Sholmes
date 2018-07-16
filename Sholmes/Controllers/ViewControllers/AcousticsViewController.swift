@@ -11,6 +11,7 @@ import UIKit
 class AcousticsViewController: UIViewController {
 
     
+    @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var textView: UITextView!
@@ -29,6 +30,7 @@ class AcousticsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.stopButton.isEnabled = false
         self.startButton.isEnabled = true
+        self.clearButton.isEnabled = false
     }
 
     
@@ -43,6 +45,7 @@ class AcousticsViewController: UIViewController {
         
         self.speechToTextController.stop()
         self.textView.text = ""
+        self.clearButton.isEnabled = false
     }
     
     
@@ -52,6 +55,7 @@ class AcousticsViewController: UIViewController {
         
         self.startButton.addTarget(self, action: #selector(start), for: .touchUpInside)
         self.stopButton.addTarget(self, action: #selector(stop), for: .touchUpInside)
+        self.clearButton.addTarget(self, action: #selector(didTapClearItem(_:)), for: .touchUpInside)
     }
     
     
@@ -61,6 +65,7 @@ class AcousticsViewController: UIViewController {
         self.speechToTextController.start()
         self.stopButton.isEnabled = true
         self.startButton.isEnabled = false
+        self.clearButton.isEnabled = false
     }
 
     
@@ -69,5 +74,8 @@ class AcousticsViewController: UIViewController {
         self.speechToTextController.stop()
         self.startButton.isEnabled = true
         self.stopButton.isEnabled = false
+        if self.textView.text.count > 0{
+            self.clearButton.isEnabled = true
+        }
     }
 }
