@@ -19,4 +19,6 @@ class AppController{
     var visualController = VisualController.shared
     
     var textualController = TextualController.shared
+    
+    var speechToTextController = SpeechToTextController.shared
 }

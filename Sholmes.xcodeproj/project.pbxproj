@@ -19,6 +19,21 @@
 		A0A6A15420F53A220013AB45 /* SholmesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6A15320F53A220013AB45 /* SholmesTests.swift */; };
 		A0A6A15F20F53A220013AB45 /* SholmesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A6A15E20F53A220013AB45 /* SholmesUITests.swift */; };
 		A0BDC5FC20FA029400D1710B /* AcousticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDC5FB20FA029400D1710B /* AcousticsViewController.swift */; };
+		A0BDC5FE20FA473800D1710B /* TextualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDC5FD20FA473800D1710B /* TextualViewController.swift */; };
+		A0BDC60120FA4D5F00D1710B /* TextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDC5FF20FA4D5F00D1710B /* TextViewTableViewCell.swift */; };
+		A0BDC60220FA4D5F00D1710B /* TextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BDC60020FA4D5F00D1710B /* TextViewTableViewCell.xib */; };
+		A0BDC60520FA506A00D1710B /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDC60320FA506A00D1710B /* ScoreTableViewCell.swift */; };
+		A0BDC60620FA506A00D1710B /* ScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BDC60420FA506A00D1710B /* ScoreTableViewCell.xib */; };
+		A0BDC60920FB573E00D1710B /* ScoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDC60720FB573E00D1710B /* ScoreCollectionViewCell.swift */; };
+		A0BDC60A20FB573E00D1710B /* ScoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BDC60820FB573E00D1710B /* ScoreCollectionViewCell.xib */; };
+		A0BDC60D20FB7EC500D1710B /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDC60B20FB7EC500D1710B /* HeaderTableViewCell.swift */; };
+		A0BDC60E20FB7EC500D1710B /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BDC60C20FB7EC500D1710B /* HeaderTableViewCell.xib */; };
+		A0BDC61020FB9C6100D1710B /* NLUController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDC60F20FB9C6100D1710B /* NLUController.swift */; };
+		A0BDC61120FB9C9C00D1710B /* NaturalLanguageUnderstandingV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6197E20F54C34005C0135 /* NaturalLanguageUnderstandingV1.framework */; };
+		A0BDC61220FB9CE800D1710B /* NaturalLanguageClassifierV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6197620F54C33005C0135 /* NaturalLanguageClassifierV1.framework */; };
+		A0BDC61320FBC27D00D1710B /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6197C20F54C33005C0135 /* SpeechToTextV1.framework */; };
+		A0BDC61420FBC27D00D1710B /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6197820F54C33005C0135 /* Starscream.framework */; };
+		A0BDC61620FBC33800D1710B /* SpeechToTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BDC61520FBC33800D1710B /* SpeechToTextController.swift */; };
 		A0E6198120F54C34005C0135 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6197520F54C33005C0135 /* VisualRecognitionV3.framework */; };
 		A0E6198E20F5567D005C0135 /* something.png in Resources */ = {isa = PBXBuildFile; fileRef = A0E6198D20F5567D005C0135 /* something.png */; };
 		A0E6199020F55875005C0135 /* pots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0E6198F20F55875005C0135 /* pots.jpg */; };
@@ -65,6 +80,17 @@
 		A0A6A15E20F53A220013AB45 /* SholmesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SholmesUITests.swift; sourceTree = "<group>"; };
 		A0A6A16020F53A220013AB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0BDC5FB20FA029400D1710B /* AcousticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcousticsViewController.swift; sourceTree = "<group>"; };
+		A0BDC5FD20FA473800D1710B /* TextualViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextualViewController.swift; sourceTree = "<group>"; };
+		A0BDC5FF20FA4D5F00D1710B /* TextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewTableViewCell.swift; sourceTree = "<group>"; };
+		A0BDC60020FA4D5F00D1710B /* TextViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewTableViewCell.xib; sourceTree = "<group>"; };
+		A0BDC60320FA506A00D1710B /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		A0BDC60420FA506A00D1710B /* ScoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreTableViewCell.xib; sourceTree = "<group>"; };
+		A0BDC60720FB573E00D1710B /* ScoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0BDC60820FB573E00D1710B /* ScoreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreCollectionViewCell.xib; sourceTree = "<group>"; };
+		A0BDC60B20FB7EC500D1710B /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		A0BDC60C20FB7EC500D1710B /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		A0BDC60F20FB9C6100D1710B /* NLUController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLUController.swift; sourceTree = "<group>"; };
+		A0BDC61520FBC33800D1710B /* SpeechToTextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToTextController.swift; sourceTree = "<group>"; };
 		A0E6197320F54C33005C0135 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
 		A0E6197420F54C33005C0135 /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToneAnalyzerV3.framework; path = Carthage/Build/iOS/ToneAnalyzerV3.framework; sourceTree = "<group>"; };
 		A0E6197520F54C33005C0135 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = "<group>"; };
@@ -92,8 +118,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0BDC61320FBC27D00D1710B /* SpeechToTextV1.framework in Frameworks */,
+				A0BDC61420FBC27D00D1710B /* Starscream.framework in Frameworks */,
+				A0BDC61220FB9CE800D1710B /* NaturalLanguageClassifierV1.framework in Frameworks */,
 				A0E6198120F54C34005C0135 /* VisualRecognitionV3.framework in Frameworks */,
 				A03DF12220F88E4D0074ED7A /* ToneAnalyzerV3.framework in Frameworks */,
+				A0BDC61120FB9C9C00D1710B /* NaturalLanguageUnderstandingV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				A03DF12820F8905C0074ED7A /* TextualController.swift */,
+				A0BDC60F20FB9C6100D1710B /* NLUController.swift */,
+				A0BDC61520FBC33800D1710B /* SpeechToTextController.swift */,
 			);
 			path = Textual;
 			sourceTree = "<group>";
@@ -201,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				A0BDC5FB20FA029400D1710B /* AcousticsViewController.swift */,
+				A0BDC5FD20FA473800D1710B /* TextualViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +270,14 @@
 			children = (
 				A0E6199520F6782D005C0135 /* ClassResultTableViewCell.swift */,
 				A0E6199620F6782D005C0135 /* ClassResultTableViewCell.xib */,
+				A0BDC5FF20FA4D5F00D1710B /* TextViewTableViewCell.swift */,
+				A0BDC60020FA4D5F00D1710B /* TextViewTableViewCell.xib */,
+				A0BDC60320FA506A00D1710B /* ScoreTableViewCell.swift */,
+				A0BDC60420FA506A00D1710B /* ScoreTableViewCell.xib */,
+				A0BDC60720FB573E00D1710B /* ScoreCollectionViewCell.swift */,
+				A0BDC60820FB573E00D1710B /* ScoreCollectionViewCell.xib */,
+				A0BDC60B20FB7EC500D1710B /* HeaderTableViewCell.swift */,
+				A0BDC60C20FB7EC500D1710B /* HeaderTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -358,11 +399,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0BDC60620FA506A00D1710B /* ScoreTableViewCell.xib in Resources */,
 				A0A6A14920F53A220013AB45 /* LaunchScreen.storyboard in Resources */,
 				A0E6199A20F68829005C0135 /* somethingElse.png in Resources */,
 				A0E6199020F55875005C0135 /* pots.jpg in Resources */,
 				A0A6A14620F53A220013AB45 /* Assets.xcassets in Resources */,
+				A0BDC60A20FB573E00D1710B /* ScoreCollectionViewCell.xib in Resources */,
+				A0BDC60E20FB7EC500D1710B /* HeaderTableViewCell.xib in Resources */,
 				A0E6199820F6782D005C0135 /* ClassResultTableViewCell.xib in Resources */,
+				A0BDC60220FA4D5F00D1710B /* TextViewTableViewCell.xib in Resources */,
 				A0E6198E20F5567D005C0135 /* something.png in Resources */,
 				A0A6A14120F53A200013AB45 /* Main.storyboard in Resources */,
 			);
@@ -393,6 +438,10 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/VisualRecognitionV3.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ToneAnalyzerV3.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NaturalLanguageUnderstandingV1.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NaturalLanguageClassifierV1.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SpeechToTextV1.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
 			);
 			outputPaths = (
 			);
@@ -408,13 +457,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0A6A13E20F53A200013AB45 /* ViewController.swift in Sources */,
+				A0BDC61620FBC33800D1710B /* SpeechToTextController.swift in Sources */,
+				A0BDC61020FB9C6100D1710B /* NLUController.swift in Sources */,
+				A0BDC60D20FB7EC500D1710B /* HeaderTableViewCell.swift in Sources */,
 				A0BDC5FC20FA029400D1710B /* AcousticsViewController.swift in Sources */,
+				A0BDC5FE20FA473800D1710B /* TextualViewController.swift in Sources */,
 				A0A6A13C20F53A200013AB45 /* AppDelegate.swift in Sources */,
 				A0A6A14420F53A200013AB45 /* Sholmes.xcdatamodeld in Sources */,
+				A0BDC60120FA4D5F00D1710B /* TextViewTableViewCell.swift in Sources */,
 				A0E6199D20F73CD6005C0135 /* VisualController.swift in Sources */,
+				A0BDC60920FB573E00D1710B /* ScoreCollectionViewCell.swift in Sources */,
 				A0E6199720F6782D005C0135 /* ClassResultTableViewCell.swift in Sources */,
 				A0E6199320F55F27005C0135 /* sheli.swift in Sources */,
 				A03DF12920F8905C0074ED7A /* TextualController.swift in Sources */,
+				A0BDC60520FA506A00D1710B /* ScoreTableViewCell.swift in Sources */,
 				A03DF12620F88EC60074ED7A /* AcousticsController.swift in Sources */,
 				A0E6199F20F73D5B005C0135 /* AppController.swift in Sources */,
 			);

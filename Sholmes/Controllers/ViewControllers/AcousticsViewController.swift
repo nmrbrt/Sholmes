@@ -13,15 +13,22 @@ class AcousticsViewController: UIViewController {
     
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var textView: UITextView!
     
-    var textualController = AppController.shared.textualController
     
-    
+    var speechToTextController = AppController.shared.speechToTextController
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.prepareButtons()
+        self.speechToTextController.setTextViewDelegate(to: self.textView)
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.stopButton.isEnabled = false
+        self.startButton.isEnabled = true
     }
 
     
@@ -29,6 +36,15 @@ class AcousticsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
+    
+    @IBAction func didTapClearItem(_ sender: Any) {
+        
+        self.speechToTextController.stop()
+        self.textView.text = ""
+    }
+    
     
     
     
@@ -42,12 +58,16 @@ class AcousticsViewController: UIViewController {
     
     @objc func start(){
         
-        self.textualController.analyzeTone()
+        self.speechToTextController.start()
+        self.stopButton.isEnabled = true
+        self.startButton.isEnabled = false
     }
 
     
     @objc func stop(){
         
-        
+        self.speechToTextController.stop()
+        self.startButton.isEnabled = true
+        self.stopButton.isEnabled = false
     }
 }

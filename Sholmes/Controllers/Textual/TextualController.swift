@@ -25,6 +25,8 @@ class TextualController{
     var currentDocumentTone: DocumentAnalysis?
     var currentSentencesTone: [SentenceAnalysis]?
     
+    private var textForToneAnalyzer = ""
+    
     
     private init() {
         
@@ -33,11 +35,16 @@ class TextualController{
     
     
     
-    func analyzeTone(){
+    func setText(to text: String){
         
-        let text = "Please please lets do something together. I really want to do something really really cool yo!"
-
-        let toneContent = ToneContent.text(text)
+        self.textForToneAnalyzer = text
+    }
+    
+    
+    
+    func analyzeTone(completion: @escaping () -> Void){
+        
+        let toneContent = ToneContent.text(self.textForToneAnalyzer)
         
         toneAnalyzer.tone(toneContent: toneContent) { (toneAnalysis) in
         
@@ -45,10 +52,22 @@ class TextualController{
             self.currentSentencesTone = toneAnalysis.sentencesTone
             
             self.output()
+            completion()
         }
         
     }
     
+    
+    func getTonesScores() -> [ToneScore]{
+        
+        return self.currentDocumentTone?.tones ?? [ToneScore]()
+    }
+    
+    
+    func getSentencesAnalysis() -> [SentenceAnalysis]{
+        
+        return self.currentSentencesTone ?? [SentenceAnalysis]()
+    }
     
     
     func output(){
@@ -59,6 +78,24 @@ class TextualController{
                 
                 print(tone.toneName, tone.score)
             }
+        }
+    }
+}
+
+
+
+extension ToneScore{
+    
+//    func scoreModel() -> ScoreModel{
+//
+//        return ScoreModel(title: self.toneName, value: String(format: "%.3f", self.score) )
+//    }
+    
+    
+    var scoreModel: ScoreModel{
+        
+        get{
+            return ScoreModel(title: self.toneName, value: String(format: "%.3f", self.score) )
         }
     }
 }
